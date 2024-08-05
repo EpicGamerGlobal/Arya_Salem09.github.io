@@ -2,36 +2,44 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background: #fff;
+    background: #4CAF50;
     padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     text-align: center;
     margin: 0;
     font-size: 2.5em;
-    color: #ff7e5f;
+    color: #fff;
 }
 
-main {
-    padding: 20px;
+.container {
+    width: 90%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-section {
-    margin-bottom: 40px;
+.intro, .content {
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 2em;
-    color: #fff;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 p {
@@ -42,11 +50,33 @@ p {
 footer {
     text-align: center;
     padding: 20px;
-    background: #fff;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    background: #4CAF50;
+    color: white;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
 }
 
-footer p {
-    margin: 0;
-    color: #ff7e5f;
+footer .counter {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
 }
