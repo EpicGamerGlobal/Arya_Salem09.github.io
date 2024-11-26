@@ -5,22 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cool Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Welcome to My Cool Website</h1>
-        </div>
+        <nav class="navbar">
+            <div class="container">
+                <h1>My Cool Website</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="container">
-            <section class="intro">
+            <section id="about" class="intro">
                 <h2>About Me</h2>
                 <p>Hi! I am a sophomore in Houston, Texas, interested in UIL academics and coding.</p>
             </section>
-            <section class="content">
+            <section id="projects" class="content">
                 <h2>My Projects</h2>
                 <p>Check out some of my awesome projects (they're yet to come!).</p>
+                <div class="project-gallery">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <p>Description coming soon...</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <p>Description coming soon...</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h2>Contact Me</h2>
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Send Message</button>
+                </form>
             </section>
         </div>
     </main>
@@ -35,5 +61,6 @@
             </a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
